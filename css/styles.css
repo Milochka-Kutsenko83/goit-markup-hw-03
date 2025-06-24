@@ -26,6 +26,10 @@ a{
     padding: 0 15px;
     margin: 0 auto;
 }
+ 
+img{
+    display: block;
+}
 
 /* header */
 .header-page{
