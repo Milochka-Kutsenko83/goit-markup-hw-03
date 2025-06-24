@@ -9,12 +9,38 @@ body{
 
 ul, li{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
 }
 
 a{
     text-decoration: none;
 }
 
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header */
+.header-page{
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
 .logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -25,11 +51,25 @@ a{
     color: #4d5ae5;
 }
 
+.header-logo{
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 .header-logo .logo-part{
     color:#2e2f42;
 }
 
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
 .nav-link{
+    padding: 24px 0;
+    display: block;
     font-weight: 500;
     font-size: 16px;       
     line-height: 1.5;
@@ -46,23 +86,60 @@ a{
 
 .contact{
     font-style: normal;
+    margin-left: auto;
+}
+
+.contact-list{
+    display: flex;
+    align-items:center;
+    gap: 40px;
+
 }
 
 .contact-link{
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#434455;}
      
+    /* header end */
+
+    /* title page*/ 
+
+   .title-page {
+    background-color: #2e2f42;
+}
+
+.title {
+    padding-top: 188px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
 
     .type-buttom{
     cursor: pointer;
     background: #4d5ae5;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 188px;
+    padding: 16px 32px;
     }
 
 .type-buttom:hover,
@@ -70,44 +147,40 @@ a{
  background-color:#404bbf;
 }
 
-.title-page{
-    background-color: #2e2f42;
-   
+/*titel*/
+
+
+/* hidden section */
+
+.title-section-page {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 120px 0;
 }
- .title{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
- }
 
- .page-footer{
-    background-color: #2e2f42;
-   
- }
+.title-page-item{
+    width: calc(100%-72)/4 ;
+}
 
- .footer-logo .logo-part{
-    color: #f4f4fd;
- }
-
- .title-section{
+.title-section {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
- }
+    margin-bottom: 8px;
+}
 
- .section-page{
+.section-page {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
- }
+}
+/* hidden section end*/
 
- .section-team {
+.section-team {
      background-color: #f4f4fd;
     
  }
@@ -172,10 +245,19 @@ a{
     letter-spacing: 0.02em
 }
 
-.footer-page{
+.footer-page-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd
+}
+
+.page-footer {
+    background-color: #2e2f42;
+
+}
+
+.footer-logo .logo-part {
+    color: #f4f4fd;
 }
