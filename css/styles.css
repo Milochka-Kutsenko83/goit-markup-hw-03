@@ -103,7 +103,8 @@ a{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:#434455;}
+    color:#434455;
+}
      
     /* header end */
 
@@ -115,7 +116,7 @@ a{
      
 }
 
-.title {
+.title{
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -141,6 +142,9 @@ a{
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
   }
 
 .type-buttom:hover,
@@ -152,6 +156,10 @@ a{
 
 
 /* hidden section */
+
+.visually-hidden{
+
+}
 
 .title-section-page{
     display: flex;
@@ -208,6 +216,7 @@ a{
  }
 
  .list-team{
+    width: calc((100% - 72px) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #FFFFFF;
     border: 1px solid #000;
@@ -215,7 +224,7 @@ a{
  }
 
  .name-team{
-    padding: 32px 16px;
+    padding: 32px 0;
  }
 
  .name{
@@ -252,14 +261,15 @@ a{
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: #2e2f42
+    color: #2e2f42;
 }
 .section-list-portfolio{
     flex-wrap: wrap; 
     display: flex; 
     gap: 24px;
- 
+    row-gap: 48px;
 }
+
 .section-page-portfolio{
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -305,6 +315,9 @@ a{
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+    
+}
+.footer-logo{
     display: inline-block;
     margin-bottom: 16px;
 }
